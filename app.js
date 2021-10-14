@@ -36,10 +36,10 @@ console.log(arrayProductos);
 for (let producto of arrayProductos) {
     let contenedor = document.createElement("div");
     // Definimos el innerHTML del elemento con una pñanatilla dae texto
-    contenedor.innerHTML = " <h3> Nombre: ${producto.nombre}</h3>
+    contenedor.innerHTML = ` <h3> Nombre: ${producto.nombre}</h3>
     <p> Precio: ${producto.precio}</p>
     <p> Cantidad: ${producto.cantidad}</p>
-    <p> Detalle: ${producto.detalle}</p>";
+    <p> Detalle: ${producto.detalle}</p>`;
                               
   document.body.appendChild (contenedor);
 } 
@@ -49,9 +49,9 @@ document.write("<h3> Lista de productos con poco Stock (menos de 3 unidades): </
 for (let producto of pocoStock) {
     let contenedor = document.createElement("div");
     // Definimos el innerHTML del elemento con una plantilla de texto
-    contenedor.innerHTML =  " <h3> Nombre: ${producto.nombre}</h3>
+    contenedor.innerHTML =  ` <h3> Nombre: ${producto.nombre}</h3>
     <p> Cantidad: ${producto.cantidad}</p>
-    <p> Detalle: ${producto.detalle</p>";
+    <p> Detalle: ${producto.detalle}</p> `;
     document.body.appendChild(contenedor);
 }
 // productos sinStock
@@ -62,10 +62,13 @@ document.write("<h3> Lista de Productos sin Stock (cantidad = 0 o disponible = f
 for (let producto of sinStock) {
     document.write("<h3> Lista de Productos con poco Stock (menos de 3 unidades) </h3>");
     let contenedor = document.createElement("div");
-    contenedor.innerHTML = " <h3> Nombre: ${producto.nombre}</h3>
-    <p> Detalle: $ {producto.cantidad}</p>
-    <p> Detalle: $ {producto.detalle}</p>";
+    contenedor.innerHTML = `<h3> Nombre: ${producto.nombre}</h3>
+    <p> Cantidad: ${producto.cantidad}</p>
+    <p> Detalle: ${producto.detalle}</p>`;
     document.body.appendChild(contenedor);
+    
+
+
 
     
 }
